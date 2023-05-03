@@ -1,0 +1,31 @@
+{
+  "sidebar": {
+    "title": "Konfiguracija",
+    "general.divider": "General",
+    "timespan.divider": "Vremenski period",
+    "groups.divider": "Grupe",
+    "table.createdAt": "Kreirano u",
+    "table.from": "Od",
+    "table.to": "Do",
+    "table.devices": "Uredjaji",
+    "table.status": "Status",
+    "table.action": "Akcija",
+    "talbe.download":"Preuzmi u",
+    "validation.datePickersTo": "Datum Do mora biti poslije datuma Od",
+    "validation.datePickersFrom": "Od datum mora biti prije datuma Do",
+    "tableNoDate": "Bez podataka za ove datume i uredjaje" 
+  },
+  "searchDevices": "Pretraži uredjaje",
+  "unknown": "",
+  "group": "Grupa",
+  "error": "Greška",
+  "button.done.text": "Primijeni",
+  "dialog.loading.text": "Učitavanje",
+  "dialog.error.header.text": "Pažnja",
+  "button.menu.text": "Meni",
+  "button.select.text": "Izaberi",
+  "button.cancel.text": "Odustani",
+  "unit.minute.text.abbreviated": "Min",
+  "itemsPerPage": "Predmeta po stranici",
+  "generate": "Generiši"
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  width: 100%;
+  background: #394264;
+  height: 100vh;
+
+  .sidebar {
+    display: block;
+    min-width: 325px;
+  }
+
+  .main-layout {
+    display: block;
+    height: 95vh;
+    width: 100%;
+    overflow: scroll;
+    padding-top: 5vh;
+  }
+}

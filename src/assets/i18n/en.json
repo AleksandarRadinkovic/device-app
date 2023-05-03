@@ -1,0 +1,31 @@
+{
+  "sidebar": {
+    "title": "Configuration",
+    "general.divider": "General",
+    "timespan.divider": "Timespan",
+    "groups.divider": "Groups",
+    "table.createdAt": "Created at",
+    "table.from": "From",
+    "table.to": "To",
+    "table.devices": "Devices",
+    "table.status": "Status",
+    "table.action": "Action",
+    "talbe.download":"Download in",
+    "validation.datePickers": "Until date must be after From date.",
+    "validation.datePickersFrom": "From date must be before Until date.",
+    "tableNoDate": "No data for this dates and devices"
+  },
+  "searchDevices": "Search devices",
+  "unknown": "",
+  "group": "Group",
+  "error": "Error",
+  "button.done.text": "Apply",
+  "dialog.loading.text": "Loading",
+  "dialog.error.header.text": "Attention",
+  "button.menu.text": "Menu",
+  "button.select.text": "Select",
+  "button.cancel.text": "Cancel",
+  "unit.minute.text.abbreviated": "Min",
+  "itemsPerPage": "Items per page",
+  "generate": "Generate"
+}

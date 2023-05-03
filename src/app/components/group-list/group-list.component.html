@@ -1,0 +1,21 @@
+<div class="group-section">
+  <!--  Group card component  -->
+  <app-group-card [id]="data.id" [name]="data.name" [selected]="selectGroup" (toggle)="toggleCollapse()"></app-group-card>
+
+  <div *ngIf="collapsed" class="sub-settings">
+    <!--  Devices group card component  -->
+    <div class="group-card">
+      <app-group-card [id]="data.id" name="Devices" (toggle)="toggleDevices()"></app-group-card>
+    </div>
+
+      <!--  Devices list  -->
+      <div *ngIf="collapsedDevices && devices" class="subcard">
+        <app-device-card *ngFor="let device of devices | filterDevicesPipe:filter" [data]="device" [selected]="selectGroup"></app-device-card>
+      </div>
+      <!--  Recursive group component init  -->
+      <app-group-list class="subcard" *ngFor="let childGroup of childData" [data]="childGroup" [filter]="filter"></app-group-list>
+  </div>
+<!-- <button (click)="onSelectDevices()">Select Devices</button> -->
+</div>
+
+

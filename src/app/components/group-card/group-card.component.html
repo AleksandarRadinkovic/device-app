@@ -1,0 +1,13 @@
+<div class="group-card">
+  <mat-checkbox [checked]="selected" (click)="toggleGroup()"></mat-checkbox>
+  <button class="btn-collapse" (click)="toggleCollapsed()">
+    <mat-icon *ngIf="collapsed" aria-hidden="false" aria-label="expand_more">
+      expand_more
+    </mat-icon>
+    <mat-icon *ngIf="!collapsed" aria-hidden="false" aria-label="expand_less">
+      expand_less
+    </mat-icon>
+    <span>{{name}}</span>
+  </button>
+<!--  <app-color-picker [id]="id"></app-color-picker>-->
+</div>

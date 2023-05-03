@@ -1,0 +1,24 @@
+.title-divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+
+  hr {
+    display: block;
+
+    &:nth-child(1) {
+      width: 10px;
+    }
+
+    &:nth-child(3) {
+      width: 100%;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    padding: 0 4px;
+  }
+}

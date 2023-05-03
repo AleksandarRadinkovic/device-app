@@ -1,0 +1,22 @@
+.device {
+  display: flex;
+  padding: 4px 0 0 45px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+
+  div {
+    font-size: 1.4rem;
+  }
+
+  .selection-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .selected-device {
+      margin-right: 1rem;
+    }
+  }
+}

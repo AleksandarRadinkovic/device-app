@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://api.staging.tetra.pro",
+    "secure": false
+  },
+  "/data-export": {
+    "target": "http://localhost:8081",
+    "secure": false
+  }
+}

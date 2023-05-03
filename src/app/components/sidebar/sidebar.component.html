@@ -1,0 +1,46 @@
+<div class="sidebar">
+  <div class="sidebar-content">
+    <app-title-divider [title]="'sidebar.timespan.divider' | translate"></app-title-divider>
+
+    <form class="form" [formGroup]="formGroup">
+      <mat-form-field>
+        <input matInput [ngxMatDatetimePicker]="fromPicker" placeholder="From" formControlName="from"
+          [min]="minDate" [max]="maxDate" [disabled]="disabled">
+        <mat-datepicker-toggle matSuffix [for]="$any(fromPicker)"></mat-datepicker-toggle>
+        <ngx-mat-datetime-picker #fromPicker [showSpinners]="showSpinners" [touchUi]="true" [color]="color" [showSeconds]="false">
+          <!-- Custom icon or text of Apply icon -->
+          <ng-template>
+            <span>OK</span>
+          </ng-template>
+        </ngx-mat-datetime-picker>
+        <mat-error *ngIf="formGroup.get('from')?.hasError('invalidDates')">{{ 'validation.datePickersFrom' | translate }}</mat-error>
+      </mat-form-field>
+
+<!--      // {{formGroup.get('date').value?.toLocaleString()}}-->
+
+      <mat-form-field>
+        <input matInput [ngxMatDatetimePicker]="untilPicker" placeholder="Until" formControlName="until"
+              [min]="minDate" [max]="maxDate" [disabled]="disabled">
+        <mat-datepicker-toggle matSuffix [for]="$any(untilPicker)"></mat-datepicker-toggle>
+        <ngx-mat-datetime-picker #untilPicker [showSpinners]="showSpinners" [touchUi]="true" [color]="color" [showSeconds]="false">
+          <!-- Custom icon or text of Apply icon -->
+          <ng-template>
+            <!-- <mat-icon>star</mat-icon> -->
+            <span>OK</span>
+          </ng-template>
+        </ngx-mat-datetime-picker>
+      <mat-error *ngIf="formGroup.get('until')?.hasError('invalidDates')">{{ 'validation.datePickers' | translate }}</mat-error>
+      </mat-form-field>
+
+      <div class="control-section">
+        <mat-checkbox formControlName="csv" (click)="handleCheckboxClick('csv')">CSV report</mat-checkbox>
+        <mat-checkbox formControlName="kml" (click)="handleCheckboxClick('kml')">KML report</mat-checkbox>
+        <button mat-flat-button type="submit" color="primary" (click)="generateReport()" [disabled]="!formGroup.value.csv && !formGroup.value.kml || isUntilBeforeFrom()">{{ 'generate' | translate }}</button>
+      </div>
+    </form>
+
+    <app-title-divider [title]="'sidebar.groups.divider' | translate"></app-title-divider>
+
+    <app-group-list #groupList *ngFor="let group of groups" [data]="group" [filter]="findDevice" [selectedDevices]="selectedDevices" (selected)="onSelectDevices($event)"></app-group-list>
+  </div>
+</div>

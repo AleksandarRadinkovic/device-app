@@ -1,0 +1,31 @@
+{
+  "sidebar": {
+    "title": "Konfiguration",
+    "general.divider": "General",
+    "timespan.divider": "Zeitspanne",
+    "groups.divider": "Gruppe",
+    "table.createdAt": "Erstellt am",
+    "table.from": "Von",
+    "table.to": "Bis",
+    "table.devices": "Geräte",
+    "table.status": "Status",
+    "table.action": "Aktion",
+    "talbe.download":"Herunterladen als",
+    "validation.datePickers": "Bis Datum muss nach Von Datum sein",
+    "validation.datePickersFrom": "Von Datum muss vor dem Bis-Datum liegen.",
+    "tableNoDate": "Keine Daten für diese Daten und Geräte"
+  },
+  "searchDevices": "Geräte suchen",
+  "unknown": "",
+  "group": "Gruppe",
+  "error": "Fehler",
+  "button.done.text": "Anwenden",
+  "dialog.loading.text": "Lade",
+  "dialog.error.header.text": "Achtung",
+  "button.menu.text": "Menu",
+  "button.select.text": "auswählen",
+  "button.cancel.text": "Cancel",
+  "unit.minute.text.abbreviated": "Min",
+  "itemsPerPage": "Items pro Seite",
+  "generate": "Erstellen"
+}
